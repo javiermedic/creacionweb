@@ -11,9 +11,11 @@ body {
   padding: 0;
 }
 
+/* ======== header ========= */
+
 nav {
   background-color: #010101;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   z-index: 100;
   position: fixed;
   top: 0;
@@ -32,7 +34,7 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  z-index: 80;
+  z-index: 101;
 }
 
 nav li {
@@ -49,9 +51,15 @@ nav a {
   border-radius: 7px;
 }
 
+/*. test de eliminación superior de header convencional
+nav 
+  background-color: #010101;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
 nav a:hover {
   background-color: #424040;
 }
+*/
 
 nav li:first-child {
   margin-right: auto;
@@ -63,6 +71,7 @@ nav li:first-child {
   right: 0;
   height: 100vh;
   width: 250px;
+  z-index: 102;
   background-color: rgba(0, 0, 0, 0.331);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -75,14 +84,24 @@ nav li:first-child {
 
 .sidebar li {
   width: 100%;
+  fill: #fff;
 }
 
 .sidebar a {
   width: 100%;
 }
 
+.sidebar svg path {
+  fill: #fff;
+}
+
 .menu-button {
   display: none;
+  z-index: 101;
+}
+
+.menu-button svg path {
+  fill: #fff;
 }
 
 @media (max-width: 800px) {

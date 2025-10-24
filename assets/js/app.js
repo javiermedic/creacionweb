@@ -1,4 +1,7 @@
- function showSidebar(){
+
+// header
+
+function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'flex'
     }
@@ -7,7 +10,8 @@
       sidebar.style.display = 'none'
     }
 
-    // slider
+
+// slider
 
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -64,6 +68,7 @@ function setPositionThumbnail () {
 }
 
 // click thumbnail
+
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
