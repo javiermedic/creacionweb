@@ -5,8 +5,9 @@
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #010101;
+  background-color: #ffffff;
   color: #eee;
+  /* Se elimina el padding-top para un enfoque más limpio */
 }
 
 * {
@@ -18,16 +19,22 @@ body {
 
 nav {
   background-color: #010101;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  background-color: transparent;
   z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
-  padding: 20px 0 10px 0;
+  padding: 40px 0;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+nav.scrolled {
+  background-color: #010101d6;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  padding: 28px 0;
 }
 
 nav ul {
@@ -118,9 +125,9 @@ nav li:first-child {
 
 .slider {
   height: 100vh;
-  margin-top: -10px;
   position: relative;
   font-weight: 300;
+  /* Se elimina el margen negativo */
 }
 
 .slider .list .item {
@@ -150,7 +157,7 @@ nav li:first-child {
 .slider .list .item .content {
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 25%; /* Aumentamos el espacio superior para que el contenido baje */
   width: 500px;
   max-width: 80%;
   z-index: 1;
@@ -278,6 +285,12 @@ nav li:first-child {
 
 /* area informacion */
 
+.tuweb {
+    background-color: #010101;
+    border-radius: 0 0 28px 28px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
 #tituloWeb {
   font-family: Open Sans;
   font-weight: 300;
@@ -301,14 +314,14 @@ nav li:first-child {
 }
 .row h3 {
   margin-top: 0; /* O un valor pequeño si quieres un poco de espacio, ej: 10px */
-  margin-bottom: 120px;
+  margin-bottom: 90px;
   /* font-weight se hereda de #tituloWeb */
 }
 
 .row h4 {
-  margin-bottom: 80px;
   font-weight: 300;
   text-transform: uppercase;
+  margin-bottom: 20px; /* Reducido para juntar título y texto */
 }
 
 /* Estilos para las tarjetas de información */
@@ -336,4 +349,18 @@ nav li:first-child {
   height: 100%;
   background: radial-gradient(circle at left, rgba(120, 81, 169, 0.3), transparent 70%);
   z-index: -1; /* Lo posiciona detrás del contenido */
+}
+
+
+#infoempresa {
+  color: #010101;
+  border-radius: 26px;
+}
+
+#infoempresa .row .col {
+  font-family: Open Sans;
+}
+
+#infoempresa .row .col h3 {
+  font-weight: 300;
 }

@@ -1,5 +1,14 @@
 
-// header
+// header scroll effect
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('nav');
+  // Agrega la clase 'scrolled' cuando el scroll es mayor a 50px
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
 
 function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
