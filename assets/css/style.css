@@ -5,7 +5,7 @@
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #f0f2f6;
   color: #eee;
   /* Se elimina el padding-top para un enfoque más limpio */
 }
@@ -289,6 +289,7 @@ nav li:first-child {
     background-color: #010101;
     border-radius: 0 0 28px 28px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    padding-bottom: 130px;
 }
 
 #tituloWeb {
@@ -355,6 +356,8 @@ nav li:first-child {
 #infoempresa {
   color: #010101;
   border-radius: 26px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 #infoempresa .row .col {
@@ -362,5 +365,38 @@ nav li:first-child {
 }
 
 #infoempresa .row .col h3 {
+  font-weight: 300;
+}
+
+#card01 h2 {
+    text-transform:lowercase;
+    font-family: Open Sans;
+    font-weight: 300;
+}
+
+#card01 .card {
+    border: none; /* Eliminamos el borde */
+    border-radius: 27px; /* Aplicamos el border-radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra uniforme y sutil */
+}
+
+#card02 {
+  border-radius: 27px;
+  background-color: #010101;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra uniforme y sutil */
+  margin: 137px auto; /* Centrado horizontalmente con margen vertical */
+  padding-bottom: 43px;
+}
+
+#card02 .row .col .container {
+  padding: 0 123px;
+}
+
+#card02 .row .col .container h1 {
+  font-weight: 300;
+}
+
+#card02 .row .col .container h4 {
+  font-family: Poppins;
   font-weight: 300;
 }
